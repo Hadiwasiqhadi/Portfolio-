@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: radial-gradient(circle, #000000, #0A0A2A, #001F3F, #001A66);
+  font-family: 'Exo', sans-serif;
+  color: #FFFFFF;
+  overflow-x: hidden;
+}
+
+nav {
+  background: linear-gradient(90deg, #39FF14, #00FFFF);
+  color: #000000;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  box-shadow: 0 0 15px #39FF14;
+}
+
+picture {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.img1 {
+  border-radius: 50%;
+  width: 150px;
+  border: 5px solid #39FF14;
+  box-shadow: 0 0 30px #39FF14, 0 0 15px #00FFFF inset;
+}
+
+.container {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 0, 0, 0.7));
+  box-shadow: 0 0 30px #00FFFF;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+h1 {
+  font-size: 35px;
+  font-family: 'Orbitron', sans-serif;
+  text-transform: uppercase;
+  color: #39FF14;
+  letter-spacing: 3px;
+  text-shadow: 0 0 10px #39FF14, 0 0 20px #00FFFF;
+}
+
+h2 {
+  font-size: 24px;
+  color: #FFFFFF;
+  margin-top: 10px;
+  font-style: italic;
+  text-shadow: 0 0 5px #00FFFF, 0 0 15px #39FF14;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: #000000;
+  background: linear-gradient(90deg, #39FF14, #00FFFF);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px #39FF14;
+}
+
+.buttons a:hover {
+  color: #FFFFFF;
+  background: linear-gradient(90deg, #00FFFF, #39FF14);
+  box-shadow: 0 0 20px #00FFFF, 0 0 20px #39FF14;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #00FFFF;
+  text-shadow: 0 0 5px #39FF14;
+}
+
+.minibtn a {
+  text-decoration: none;
+  color: #000000;
+  background: linear-gradient(90deg, #39FF14, #00FFFF);
+  padding: 2px 4px;
+  border-radius: 5px;
+  font-weight: italic;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px #000000;
+  font-size: 9px;
+}
+
+.minibtn a:hover {
+  color: #FFFFFF;
+  background: linear-gradient(90deg, #00FFFF, #39FF14);
+  box-shadow: 0 0 20px #000000, 0 0 20px #39FF14;
+}
+
+/* Button Tag Styling */
+.btn {
+  margin-top: 20px;
+  border: none;
+  text-decoration: none;
+  color: #000000;
+  background: linear-gradient(90deg, #39FF14, #00FFFF);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px #39FF14;
+}
+
+.btn:hover {
+  color: #FFFFFF;
+  background: linear-gradient(90deg, #00FFFF, #39FF14);
+  box-shadow: 0 0 20px #00FFFF, 0 0 20px #39FF14;
+}
+
+/* Counter Styling */
+.view {
+  display: flex;
+  justify-content: center;
+  padding: 2px;
+  letter-spacing: 2px;
+  color: #000000;
+  background-color: #FFF;
+  background: linear-gradient(90deg, #39FF14, #00FFFF);
+}
+
+.view div {
+  margin-left: 10px;
+  border-radius: 50%;
+  border: 2px solid #00FFFF;
+  background: linear-gradient(90deg, #39FF14, #00FFFF);
+  padding: 5px;
+}
