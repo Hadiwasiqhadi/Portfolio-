@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>image editor</title>
+  <link rel="stylesheet" href="Image.css" type="text/css"  />
+</head>
+<body>
+  
+  
+<div class="container">
+    <h1>Image editor</h1>
+    
+    <input type="file" id="imageUpload" accept="image/*">
+    
+    <canvas id="imageCanvas"></canvas>
+    
+    <div id="controls">
+      <button data-control="contrast">Contrast</button>
+      <button data-control="brightness">Brightness</button>
+      <button data-control="saturation">Saturation</button>
+      <button data-control="blur">Blur</button>
+      <button data-control="shadow">shadow</button>
+      <button data-control="clarity">clarity</button>
+
+      <!-- Add more buttons as needed -->
+    </div>
+    <div id="sliders">
+      <label for="slider">Adjust:</label>
+      <input type="range" id="slider" min="0" max="200" value="100">
+    </div>
+  </div>  
+  
+  
+  <button id="downloadImage">Download Image</button>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
