@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <style>
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      margin: auto;
+      padding: 10px;
+      
+      
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 10px 0;
+      display: flex;
+      justify-content: space-between;
+    }
+    button {
+      margin-left: 10px;
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: url(mouse.png),pointer;
+    }
+    
+    footer {
+  display: grid; /* Corrected display property */
+  align-content: end;
+  position: fixed; /* Fixes the footer to the bottom */
+  bottom: 0;
+  width: 100%; /* Ensures it spans the full width */
+  background-color: #f1f1f1; /* Optional: Footer background color */
+  text-align: center; /* Aligns text centrally */
+}
+
+    
+  </style>
+</head>
+<body>
+  <h1>To-Do List</h1>
+  <input type="text" id="taskInput" placeholder="Enter a task" />
+  
+  <button id="addTaskButton">Add Task</button>
+  <ul id="taskList"></ul>
+  
+  
+  <footer style="text-align: center; margin-top: 20px;">
+  <p>&copy; 2025 wasiq. All Rights Reserved.</p>
+</footer>
+
+  <script src="todo.js"></script>
+</body>
+</html>
