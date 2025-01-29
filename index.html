@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Exo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>Welcome to My Portfolio</nav>
+  
+  <nav>
+    <div class="minibtn">
+      <a href="#Skills">Skills</a>
+      <a href="#Programing">Programming</a>
+      <a href="#Experience">Experience</a>
+      <a href="#Language">Language</a>
+      <a href="#Contect">Contact 📞</a>
+      <a href="Project.html">Project</a>
+    </div>
+  </nav>
+
+  <!-- Page View Counter -->
+  <div class="view">
+    <h3>Views Count =</h3>
+    <div id="viewCount">0</div>
+  </div>
+
+  <!-- Profile Picture -->
+  <picture>
+    <img class="img1" src="my-pic.jpg" alt="Wasiq Khan">
+  </picture>
+
+  <!-- Introduction Section -->
+  <div class="container">
+    <h1>I am Wasiq Khan</h1>
+    <h2>A Web Developer</h2>
+  </div>
+
+  <!-- Skills Section -->
+  <div class="container" id="Skills">
+    <h1>Skills</h1>
+    <h2>
+      <ul>
+        <li>Web Developer</li>
+        <li>Graphic Designer</li>
+        <li>WordPress Expert</li>
+      </ul>
+    </h2>
+    <div class="buttons">
+      <a href="About.html">About Me</a>
+    </div>
+  </div>
+
+  <!-- Projects Section -->
+  <div class="container" id="Skills">
+    <h1>Projects</h1>
+    <h2>Click the button to view projects.</h2>
+    <div class="buttons">
+      <a href="Project.html">Click Me</a>
+    </div>
+  </div>
+
+  <!-- Programming Section -->
+  <div class="container" id="Programing">
+    <h1>Programming</h1>
+    <h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>MySQL</li>
+      </ul>
+    </h2>
+  </div>
+
+  <!-- Experience Section -->
+  <div class="container" id="Experience">
+    <h1>Experience</h1>
+    <h2>WKH Enterprises</h2>
+    <h3>06-12-2022 to 30-11-2024</h3>
+    <p>
+      This is to certify that Mr. Wasiq Khan S/o Wali Muhammad has been working as a 
+      "Computer Operator and Graphics Designer" from 06-12-2022 to 30-11-2024.<br><br>
+      Address: SUIT # 409, 4th Floor Yousuf Chamber KECHS, Main Shahra-e-Faisal, Karachi.
+    </p>
+  </div>
+
+  <!-- Language Section -->
+  <div class="container" id="Language">
+    <h1>Languages</h1>
+    <h2>
+      <ul>
+        <li>English</li>
+        <li>Urdu</li>
+        <li>Pashto</li>
+      </ul>
+    </h2>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="container" id="Contect">
+    <h1>Contact</h1>
+    <h2>Phone</h2>
+    <h3><a href="tel:+923442987080" style="text-decoration:none;color:#fff;">📞 +923442987080</a></h3>
+    <h2>Email</h2>
+    <h3><a href="mailto:gdhadi01@gmail.com" style="text-decoration:none;color:#fff;">✉️ gdhadi01@gmail.com</a></h3>
+    <h2>Address</h2>
+    <h3>🏠 Pakistan, Karachi, Landi</h3>
+    <h2>Scan Me</h2>
+    <h3>
+      <a href="qr-code.png" download="qr-code.png">
+        <img src="qr-code.png" width="100" alt="QR Code">
+      </a>
+    </h3>
+  </div>
+
+  <!-- JavaScript for View Counter -->
+  <script type="text/javascript">
+    let viewCount = localStorage.getItem("pageViews") || 0;
+    viewCount++;
+
+    // Format view count into k, M, B format
+    function formatNumber(num) {
+      if (num >= 1000000000) {
+        return (num / 1000000000).toFixed(1) + 'B'; // Billion
+      } else if (num >= 1000000) {
+        return (num / 1000000).toFixed(1) + 'M'; // Million
+      } else if (num >= 1000) {
+        return (num / 1000).toFixed(1) + 'k'; // Thousand
+      } else {
+        return num; // Less than 1000, display the number normally
+      }
+    }
+
+    // Display the formatted view count
+    document.getElementById("viewCount").textContent = formatNumber(viewCount);
+
+    // Store the updated view count back in localStorage
+    localStorage.setItem("pageViews", viewCount);
+  </script>
+
+  <!-- Footer -->
+  <footer>&copy; 2024 Wasiq Khan. All Rights Reserved.</footer>
+</body>
+</html>
